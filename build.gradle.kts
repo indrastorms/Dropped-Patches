@@ -16,6 +16,7 @@ repositories {
 
 dependencies {
     implementation(libs.revanced.patcher)
+    implementation(libs.revanced.patches)
     implementation(libs.smali)
     // TODO: Required because build fails without it. Find a way to remove this dependency.
     implementation(libs.guava)
