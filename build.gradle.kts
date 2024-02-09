@@ -5,7 +5,7 @@ plugins {
     `maven-publish`
 }
 
-group = "your.org"
+group = "dropped"
 
 repositories {
     mavenCentral()
@@ -33,14 +33,14 @@ kotlin {
 
 tasks.withType(Jar::class) {
     manifest {
-        attributes["Name"] = "Your Patches"
+        attributes["Name"] = "Dropped Patches"
         attributes["Description"] = "Patches for ReVanced."
         attributes["Version"] = version
         attributes["Timestamp"] = System.currentTimeMillis().toString()
         attributes["Source"] = "git@github.com:you/revanced-patches.git"
-        attributes["Author"] = "You"
-        attributes["Contact"] = "contact@your.homepage"
-        attributes["Origin"] = "https://your.homepage"
+        attributes["Author"] = "Indranil012"
+        attributes["Contact"] = "https://t.me/Indra012"
+        attributes["Origin"] = "https://github.com/Indranil012/Dropped-Patches"
         attributes["License"] = "GNU General Public License v3.0"
     }
 }
