@@ -1,4 +1,4 @@
-## Picked up some dropped patches for ReVanced:
+## Picked up some dropped patches for ReVanced
 
 ## FX File Explorer
 ```kotlin
