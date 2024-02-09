@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.0.0...v1.0.1) (2024-02-09)
+
+
+### Bug Fixes
+
+* to trigger release ([992f52a](https://github.com/Indranil012/Dropped-Patches/commit/992f52a851d7136970a6db81a444c9e06dec7c1b))
+
 ## [1.0.1-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.0.0...v1.0.1-dev.1) (2024-02-09)
 
 
