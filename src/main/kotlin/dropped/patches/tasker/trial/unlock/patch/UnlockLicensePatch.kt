@@ -4,8 +4,7 @@ import app.revanced.util.exception
 import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.patch.BytecodePatch
-import app.revanced.patcher.patch.PatchResultSuccess
-import app.revanced.patcher.patch.annotations.Patch
+import app.revanced.patcher.patch.annotation.Patch
 import app.revanced.patches.tasker.trial.unlock.fingerprints.CheckLicenseFingerprint
 
 @Patch(
@@ -25,6 +24,5 @@ object UnlockLicensePatch : BytecodePatch(
         ?.mutableMethod
         // Return the method early, which prompts the user with a non dismissible dialog, when the trial period is over.
         ?.addInstruction(0, "return-void")
-        ?.let { PatchResultSuccess() }
-        ?: CheckLicenseFingerprint.exception()
+        ?: throw CheckLicenseFingerprint.exception()
 }
