@@ -1,3 +1,10 @@
+# [1.1.0-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.0.1...v1.1.0-dev.1) (2024-02-10)
+
+
+### Features
+
+* **tasker:** Add trial bypass ([ee6d248](https://github.com/Indranil012/Dropped-Patches/commit/ee6d24802b4ed6eb7df984461add703369a6a3d8))
+
 ## [1.0.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.0.0...v1.0.1) (2024-02-09)
 
 
