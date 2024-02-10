@@ -1,7 +1,7 @@
 package app.revanced.patches.tasker.trial.unlock.annotations
 
-import app.revanced.patcher.annotation.Compatibility
-import app.revanced.patcher.annotation.Package
+import app.revanced.patcher.patch.annotation.Compatibility
+import app.revanced.patcher.patch.annotation.Package
 
 @Compatibility([Package("net.dinglisch.android.taskerm")])
 @Target(AnnotationTarget.CLASS)
