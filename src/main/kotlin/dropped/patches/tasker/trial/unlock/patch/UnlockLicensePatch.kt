@@ -16,7 +16,7 @@ import app.revanced.patches.tasker.trial.unlock.fingerprints.CheckLicenseFingerp
             ]
 )
 object UnlockLicensePatch : BytecodePatch(
-    listOf(
+    setOf(
         CheckLicenseFingerprint
     )
 ) {
