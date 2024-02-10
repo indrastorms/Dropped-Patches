@@ -15,11 +15,7 @@ import app.revanced.patches.tasker.trial.unlock.fingerprints.CheckLicenseFingerp
          CompatiblePackage("net.dinglisch.android.taskerm")
             ]
 )
-object UnlockLicensePatch : BytecodePatch(
-    listOf(
-        CheckLicenseFingerprint
-    )
-) {
+object UnlockLicensePatch : BytecodePatch(CheckLicenseFingerprint) {
     override fun execute(context: BytecodeContext) = CheckLicenseFingerprint
         .result
         ?.mutableMethod
