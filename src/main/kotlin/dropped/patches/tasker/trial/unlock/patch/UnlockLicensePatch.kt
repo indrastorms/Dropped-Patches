@@ -5,11 +5,12 @@ import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.annotation.Patch
+import app.revanced.patcher.patch.annotation.CompatiblePackage
 import app.revanced.patches.tasker.trial.unlock.fingerprints.CheckLicenseFingerprint
 
 @Patch(
-    Name = "Unlock trial",
-    Description = "Unlocks the trial version.",
+    name = "Unlock trial",
+    description = "Unlocks the trial version.",
     compatiblePackages = [
          CompatiblePackage("net.dinglisch.android.taskerm")
             ]
