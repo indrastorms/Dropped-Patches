@@ -15,7 +15,7 @@ import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction11x
     description = "Unlocks Nova Prime and all functions of the app.",
     compatiblePackages = [CompatiblePackage("com.teslacoilsw.launcher")]
 )
-object UnlockPrimePatch : BytecodePatch(
+class UnlockPrimePatch : BytecodePatch(
     setOf(
         UnlockPrimeFingerprint
     )
