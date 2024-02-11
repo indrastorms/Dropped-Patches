@@ -22,7 +22,7 @@ object UnlockPrimePatch : BytecodePatch(
         UnlockPrimeFingerprint.result?.apply {
         // Any value except 0 unlocks prime, but 512 is needed for a protection mechanism
         // which would reset the preferences if the value on disk had changed after a restart.
-        const val PRIME_STATUS: Int = 512
+        val PRIME_STATUS: Int = 512
         val insertIndex = scanResult.patternScanResult!!.endIndex + 1
 
         val primeStatusRegister =
