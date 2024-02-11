@@ -1,8 +1,15 @@
 ## Picked up some dropped patches for ReVanced
 
-## FX File Explorer
+## Supported apps
 ```kotlin
+FX File Explorwe
 ⦿ Unlock plus patch
+
+Nova Launcher
+⦿ Prime unlock
+
+Tasker
+⦿ Bypass trial
 ```
 
 ## License
