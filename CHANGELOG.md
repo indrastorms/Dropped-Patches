@@ -1,3 +1,10 @@
+# [1.2.0-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.1.0...v1.2.0-dev.1) (2024-02-11)
+
+
+### Features
+
+* **nova:** pro unlock ([e5d28e5](https://github.com/Indranil012/Dropped-Patches/commit/e5d28e5e82b0d9f0361ced8a76e5806c1a791660))
+
 # [1.1.0](https://github.com/Indranil012/Dropped-Patches/compare/v1.0.1...v1.1.0) (2024-02-10)
 
 
