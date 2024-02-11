@@ -1,7 +1,7 @@
 package app.revanced.patches.nova.prime.fingerprints
 
 import app.revanced.patcher.fingerprint.MethodFingerprint
-import org.jf.dexlib2.Opcode
+import com.android.tools.smali.dexlib2.Opcode
 
 object UnlockPrimeFingerprint : MethodFingerprint(
     "V",
