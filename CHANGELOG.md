@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.0...v1.2.1) (2024-02-18)
+
+
+### Bug Fixes
+
+* **nova:** Update patch ([8439b49](https://github.com/Indranil012/Dropped-Patches/commit/8439b49fc94a5f03dbdf3f15feee70bd91c395c0))
+
 ## [1.2.1-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.0...v1.2.1-dev.1) (2024-02-18)
 
 
