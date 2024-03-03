@@ -26,6 +26,7 @@ jobs:
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+        run: ./gradlew apiDump
         run: ./gradlew build clean
 
       - name: Setup Node.js
