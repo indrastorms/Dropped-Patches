@@ -1,0 +1,30 @@
+public final class app/revanced/patches/fxfileexplorer/unlockplus/UnlockPlusPatch : app/revanced/patcher/patch/BytecodePatch {
+	public static final field INSTANCE Lapp/revanced/patches/fxfileexplorer/unlockplus/UnlockPlusPatch;
+	public fun execute (Lapp/revanced/patcher/data/BytecodeContext;)V
+	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
+}
+
+public final class app/revanced/patches/fxfileexplorer/unlockplus/fingerprints/IsPlusUnlockedFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
+	public static final field INSTANCE Lapp/revanced/patches/fxfileexplorer/unlockplus/fingerprints/IsPlusUnlockedFingerprint;
+}
+
+public final class app/revanced/patches/nova/prime/fingerprints/UpdatePrimeStatusFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
+	public static final field INSTANCE Lapp/revanced/patches/nova/prime/fingerprints/UpdatePrimeStatusFingerprint;
+}
+
+public final class app/revanced/patches/nova/prime/patch/UnlockPrimePatch : app/revanced/patcher/patch/BytecodePatch {
+	public static final field INSTANCE Lapp/revanced/patches/nova/prime/patch/UnlockPrimePatch;
+	public fun execute (Lapp/revanced/patcher/data/BytecodeContext;)V
+	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
+}
+
+public final class app/revanced/patches/tasker/trial/unlock/fingerprints/CheckLicenseFingerprint : app/revanced/patcher/fingerprint/MethodFingerprint {
+	public static final field INSTANCE Lapp/revanced/patches/tasker/trial/unlock/fingerprints/CheckLicenseFingerprint;
+}
+
+public final class app/revanced/patches/tasker/trial/unlock/patch/UnlockLicensePatch : app/revanced/patcher/patch/BytecodePatch {
+	public static final field INSTANCE Lapp/revanced/patches/tasker/trial/unlock/patch/UnlockLicensePatch;
+	public fun execute (Lapp/revanced/patcher/data/BytecodeContext;)V
+	public synthetic fun execute (Lapp/revanced/patcher/data/Context;)V
+}
+
