@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.0...v1.2.1) (2024-03-12)
+
+
+### Bug Fixes
+
+* merge upstream ([33bd7db](https://github.com/Indranil012/Dropped-Patches/commit/33bd7db92b7a0ae146abbdbe6b6da9ef4f3b9de5))
+* **nova:** Update patch ([fe30abb](https://github.com/Indranil012/Dropped-Patches/commit/fe30abb9e524843ded97d64d9171e6be47309d7d))
+* release ([ed43b24](https://github.com/Indranil012/Dropped-Patches/commit/ed43b24588069bdefc5fd63f35e560381f68a635))
+
 ## [1.2.1-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.0...v1.2.1-dev.1) (2024-03-12)
 
 
