@@ -1,3 +1,10 @@
+## [1.2.6-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.5...v1.2.6-dev.1) (2024-03-17)
+
+
+### Bug Fixes
+
+* fix release real ([8fe38b7](https://github.com/Indranil012/Dropped-Patches/commit/8fe38b7b2dc111d7e4e26fcaa0b319d13c51cace))
+
 ## [1.2.5](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.4...v1.2.5) (2024-03-17)
 
 
