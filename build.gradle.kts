@@ -7,7 +7,7 @@ plugins {
     signing
 }
 
-group = "dropped"
+group = "downloads"
 
 repositories {
     mavenCentral()
@@ -98,7 +98,7 @@ publishing {
             from(components["java"])
 
             pom {
-                name = "Your Patches"
+                name = "Dropped-Patches"
                 description = "Patches for ReVanced."
                 url = "https://revanced.app"
 
