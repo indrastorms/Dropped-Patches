@@ -1,3 +1,10 @@
+## [1.2.6-dev.2](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.6-dev.1...v1.2.6-dev.2) (2024-03-17)
+
+
+### Bug Fixes
+
+* fix release i swear ([2ced451](https://github.com/Indranil012/Dropped-Patches/commit/2ced4514b898be7ed46fcac03e40fd1309b7d6f4))
+
 ## [1.2.6-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.5...v1.2.6-dev.1) (2024-03-17)
 
 
