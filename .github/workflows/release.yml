@@ -26,7 +26,7 @@ jobs:
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-        run: ./gradlew build clean
+        run: ./gradlew build
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
