@@ -85,7 +85,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/revanced/revanced-patches-template")
+            url = uri("https://maven.pkg.github.com/indranil012/dropped-patches")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -116,9 +116,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/you/revanced-patches.git"
-                    developerConnection = "scm:git:git@github.com:you/revanced-patches.git"
-                    url = "https://github.com/you/revanced-patches"
+                    connection = "scm:git:git://github.com/Indranil012/Dropped-Patches.git"
+                    developerConnection = "scm:git:git@github.com:Indranil012/Dropped-Patches.git"
+                    url = "https://github.com/Indranil012/Dropped-Patches"
                 }
             }
         }
