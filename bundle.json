@@ -1,9 +1,9 @@
 {
   "patches": {
-    "version": "v1.2.6",
-    "url": "https://github.com/Indranil012/Dropped-Patches/releases/download/v1.2.6/dropped-patches-1.2.6.jar"
+    "version": "v1.2.7",
+    "url": "https://github.com/Indranil012/Dropped-Patches/releases/download/v1.2.7/dropped-patches-1.2.7.jar"
   },
-  "integration": {
+  "integrations": {
     "version": "v1.7.0",
     "url": "https://github.com/ReVanced/revanced-integrations/releases/download/v1.7.0/revanced-integrations-1.7.0.apk"
   }
