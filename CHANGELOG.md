@@ -1,3 +1,10 @@
+## [1.2.7-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.6...v1.2.7-dev.1) (2024-03-17)
+
+
+### Bug Fixes
+
+* Fix open pr ([e8780e3](https://github.com/Indranil012/Dropped-Patches/commit/e8780e391e246571ab442dee14a77180be3886f0))
+
 ## [1.2.6](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.5...v1.2.6) (2024-03-17)
 
 
