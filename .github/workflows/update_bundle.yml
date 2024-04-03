@@ -1,0 +1,30 @@
+name: update bundle
+
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+jobs:
+  run_python_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+      
+    - name: Run Python script
+      run: |
+        python build_bundle_url.py
+      
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add bundle.json
+        git commit -m "Update bundle.json [skip ci]"
+        git push
