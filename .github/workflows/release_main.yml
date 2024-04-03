@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/release.yml@main
+    with: 
+      gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+      passphrase: ${{ secrets.GPG_PASSPHRASE }}
+      fingerprint: ${{ env.GPG_FINGERPRINT }}
 
   update_bundle:
     runs-on: ubuntu-latest
