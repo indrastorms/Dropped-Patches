@@ -1,3 +1,10 @@
+## [1.3.3-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.2...v1.3.3-dev.1) (2024-04-03)
+
+
+### Bug Fixes
+
+* **ci:** fix update bundle ci ([f616e14](https://github.com/Indranil012/Dropped-Patches/commit/f616e14bb3c9c9dc7e6066b5894fa811c69d038f))
+
 ## [1.3.2](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.1...v1.3.2) (2024-04-03)
 
 
