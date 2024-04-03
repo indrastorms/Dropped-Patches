@@ -3,15 +3,18 @@ name: update bundle
 on:
   workflow_dispatch:
   release:
-    types: [created]
+    types: [created, published]
+    branches: [main]
 jobs:
   run_python_script:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
-      
+      uses: actions/checkout@v4
+      with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -24,8 +27,13 @@ jobs:
       
     - name: Commit and push changes
       run: |
+        git config --local user.email "indranilchowdhury0@gmail.com"
+        git config --local user.name "indranil012"
         git add bundle.json
-        git commit -m "update bundle.json [skip ci]"
-        git push origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git commit -a -m "update bundle.json [skip ci]"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GIT_TOKEN }}
+        branch: ${{ github.ref }}
