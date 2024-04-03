@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   build:
-    uses: ./.github/workflows/release.yml@main
+    uses: indranil012/dropped-patches//.github/workflows/release.yml@main
     with: 
       gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       passphrase: ${{ secrets.GPG_PASSPHRASE }}
