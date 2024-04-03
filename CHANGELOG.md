@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+## [1.3.3-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.2...v1.3.3-dev.1) (2024-04-03)
+=======
 ## [1.3.3](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.2...v1.3.3) (2024-04-03)
+>>>>>>> main
 
 
 ### Bug Fixes
