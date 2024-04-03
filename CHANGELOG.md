@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.7...v1.3.0) (2024-04-03)
+
+
+### Bug Fixes
+
+* **ci:** fix build on pull req ([8ccc2af](https://github.com/Indranil012/Dropped-Patches/commit/8ccc2af77a6fd05eb86c6accc6594028f67e417e))
+
+
+### Features
+
+* add ci to update bundle info ([466c289](https://github.com/Indranil012/Dropped-Patches/commit/466c289cb9c6078370520f736d5f75682c95bec9))
+
 # [1.3.0-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.7...v1.3.0-dev.1) (2024-04-03)
 
 
