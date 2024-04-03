@@ -24,7 +24,7 @@ def main():
             "version": patches_version,
             "url": patches_asset_url
         },
-        "integration": {
+        "integrations": {
             "version": integration_version,
             "url": integration_asset_url
         }
