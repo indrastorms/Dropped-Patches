@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   job1:
-    uses: ./.github/workflows/release.yml@main
+    uses: indranil012/dropped-patches/.github/workflows/release.yml@main
 
   job2:
     runs-on: ubuntu-latest
