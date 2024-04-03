@@ -19,12 +19,13 @@ jobs:
       
     - name: Run Python script
       run: |
+        pip install requests
         python build_bundle_url.py
       
     - name: Commit and push changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
         git add bundle.json
-        git commit -m "Update bundle.json [skip ci]"
-        git push
+        git commit -m "update bundle.json [skip ci]"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

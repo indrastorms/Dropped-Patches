@@ -1,3 +1,32 @@
+## [1.3.1-dev.4](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.1-dev.3...v1.3.1-dev.4) (2024-04-03)
+
+
+### Bug Fixes
+
+* **ci:** fix update bundle ci ([75a93c7](https://github.com/Indranil012/Dropped-Patches/commit/75a93c741dfc40f8ff8bd554a7341983ffdbdadd))
+
+## [1.3.1-dev.3](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.1-dev.2...v1.3.1-dev.3) (2024-04-03)
+
+
+### Bug Fixes
+
+* **ci:** fix update bundle ci ([8252040](https://github.com/Indranil012/Dropped-Patches/commit/8252040cd58c286a9db692a3b80a9c7521c7151d))
+
+## [1.3.1-dev.2](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.1-dev.1...v1.3.1-dev.2) (2024-04-03)
+
+
+### Bug Fixes
+
+* **ci:** fix update bundle ci ([8487e98](https://github.com/Indranil012/Dropped-Patches/commit/8487e980e64ffce35bd190869222c1c8acaa8b85))
+* **ci:** fix update bundle ci ([05aec3e](https://github.com/Indranil012/Dropped-Patches/commit/05aec3e60bee32c11aa95029540d7ffb0797644c))
+
+## [1.3.1-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.0...v1.3.1-dev.1) (2024-04-03)
+
+
+### Bug Fixes
+
+* **ci:** fix update bundle ci ([5fc3819](https://github.com/Indranil012/Dropped-Patches/commit/5fc3819aba03ec5b4848c472c7e3a996afd5c518))
+
 # [1.3.0](https://github.com/Indranil012/Dropped-Patches/compare/v1.2.7...v1.3.0) (2024-04-03)
 
 
