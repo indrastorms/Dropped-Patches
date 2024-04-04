@@ -2,12 +2,17 @@ name: update bundle
 
 on:
   workflow_dispatch:
-  release:
-    types: [created, published]
-    branches: [main]
+  push:
+    branches:
+      - main
 jobs:
-  run_python_script:
+  build:
+    uses: indranil012/dropped-patches/.github/workflows/release.yml@main
+    secrets: inherit
+
+  update_bundle:
     runs-on: ubuntu-latest
+    needs: [build]
 
     steps:
     - name: Checkout code
@@ -27,8 +32,8 @@ jobs:
       
     - name: Commit and push changes
       run: |
-        git config --local user.email "indranilchowdhury0@gmail.com"
-        git config --local user.name "indranil012"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
         git add bundle.json
         git commit -a -m "update bundle.json [skip ci]"
 
