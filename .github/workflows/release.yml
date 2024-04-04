@@ -2,9 +2,10 @@ name: Release
 
 on:
   workflow_dispatch:
+  workflow_call:
   push:
     branches:
-      - main
+      # - main
       - dev
 
 jobs:
