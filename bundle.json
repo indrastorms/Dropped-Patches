@@ -1,10 +1,10 @@
 {
   "patches": {
-    "version": "v1.3.3",
-    "url": "https://github.com/Indranil012/Dropped-Patches/releases/download/v1.3.3/dropped-patches-1.3.3.jar"
+    "version": "v1.4.1",
+    "url": "https://github.com/indrastorms/Dropped-Patches/releases/download/v1.4.1/dropped-patches-1.4.1.jar"
   },
   "integrations": {
-    "version": "v1.7.0",
-    "url": "https://github.com/ReVanced/revanced-integrations/releases/download/v1.7.0/revanced-integrations-1.7.0.apk"
+    "version": "v1.8.0",
+    "url": "https://github.com/ReVanced/revanced-integrations/releases/download/v1.8.0/revanced-integrations-1.8.0.apk"
   }
 }
