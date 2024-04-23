@@ -42,9 +42,9 @@ tasks {
         attributes["Version"] = version
         attributes["Timestamp"] = System.currentTimeMillis().toString()
         attributes["Source"] = "git@github.com:you/revanced-patches.git"
-        attributes["Author"] = "Indranil012"
+        attributes["Author"] = "indrastorms"
         attributes["Contact"] = "https://t.me/Indra012"
-        attributes["Origin"] = "https://github.com/Indranil012/Dropped-Patches"
+        attributes["Origin"] = "https://github.com/indrastorms/Dropped-Patches"
         attributes["License"] = "GNU General Public License v3.0"
     }
   }
@@ -85,7 +85,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/indranil012/dropped-patches")
+            url = uri("https://maven.pkg.github.com/indrastorms/dropped-patches")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -116,9 +116,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/Indranil012/Dropped-Patches.git"
-                    developerConnection = "scm:git:git@github.com:Indranil012/Dropped-Patches.git"
-                    url = "https://github.com/Indranil012/Dropped-Patches"
+                    connection = "scm:git:git://github.com/indrastorms/Dropped-Patches.git"
+                    developerConnection = "scm:git:git@github.com:indrastorms/Dropped-Patches.git"
+                    url = "https://github.com/indrastorms/Dropped-Patches"
                 }
             }
         }
