@@ -1,3 +1,10 @@
+# [1.4.0-dev.3](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.0-dev.2...v1.4.0-dev.3) (2024-04-23)
+
+
+### Bug Fixes
+
+* fix bundle ci ([91a895e](https://github.com/indrastorms/Dropped-Patches/commit/91a895ebee822c56b0f2384296f81922952aa51b))
+
 # [1.4.0](https://github.com/indrastorms/Dropped-Patches/compare/v1.3.3...v1.4.0) (2024-04-23)
 
 
