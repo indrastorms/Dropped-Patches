@@ -1,3 +1,10 @@
+## [1.4.1-dev.2](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.1-dev.1...v1.4.1-dev.2) (2024-04-25)
+
+
+### Bug Fixes
+
+* realease only shaded jar ([b7892cd](https://github.com/indrastorms/Dropped-Patches/commit/b7892cd613463bb057a123aa8bd08a33aa9b0f19))
+
 ## [1.4.1-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.0...v1.4.1-dev.1) (2024-04-25)
 
 
