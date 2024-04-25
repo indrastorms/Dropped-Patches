@@ -2,7 +2,7 @@
 
 ## Supported apps
 ```kotlin
-FX File Explorwe
+FX File Explorer
 ⦿ Unlock plus patch
 
 Nova Launcher
