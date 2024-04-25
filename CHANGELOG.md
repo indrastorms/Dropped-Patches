@@ -1,3 +1,14 @@
+## [1.4.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.0...v1.4.1) (2024-04-25)
+
+
+### Bug Fixes
+
+* fix bundle ci ([bfc86e2](https://github.com/indrastorms/Dropped-Patches/commit/bfc86e2a86bd276e9e350a16aae907ed959010bc))
+* fix ci ([d297dc0](https://github.com/indrastorms/Dropped-Patches/commit/d297dc08a425b6e2468957c1fa2ce8710d69054a))
+* fix Release ([3520f4f](https://github.com/indrastorms/Dropped-Patches/commit/3520f4f990e75911c8f8dff42a3afdaf547b1f88))
+* realease only shaded jar ([b7892cd](https://github.com/indrastorms/Dropped-Patches/commit/b7892cd613463bb057a123aa8bd08a33aa9b0f19))
+* spotify patch ([ec04ef0](https://github.com/indrastorms/Dropped-Patches/commit/ec04ef06b8b38f61b80ee0538241f12e17bafeb8))
+
 ## [1.4.1-dev.4](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.1-dev.3...v1.4.1-dev.4) (2024-04-25)
 
 
