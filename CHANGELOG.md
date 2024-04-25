@@ -6,6 +6,14 @@
 * fix bundle ci ([bfc86e2](https://github.com/indrastorms/Dropped-Patches/commit/bfc86e2a86bd276e9e350a16aae907ed959010bc))
 * spotify patch ([ec04ef0](https://github.com/indrastorms/Dropped-Patches/commit/ec04ef06b8b38f61b80ee0538241f12e17bafeb8))
 
+## [1.4.1-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.0...v1.4.1-dev.1) (2024-04-25)
+
+
+### Bug Fixes
+
+* fix bundle ci ([bfc86e2](https://github.com/indrastorms/Dropped-Patches/commit/bfc86e2a86bd276e9e350a16aae907ed959010bc))
+* spotify patch ([ec04ef0](https://github.com/indrastorms/Dropped-Patches/commit/ec04ef06b8b38f61b80ee0538241f12e17bafeb8))
+
 ## [1.4.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.0...v1.4.1) (2024-04-23)
 
 
