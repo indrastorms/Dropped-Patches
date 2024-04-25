@@ -1,9 +1,10 @@
 [versions]
 revanced-patcher = "19.3.1"
-revanced-patches = "4.8.0-dev.3"
+revanced-patches = "4.8.0-dev.8"
 smali = "3.0.5"
 binary-compatibility-validator = "0.14.0"
 kotlin = "1.9.22"
+shadow = "8.1.1"
 
 [libraries]
 revanced-patcher = { module = "app.revanced:revanced-patcher", version.ref = "revanced-patcher" }
@@ -13,3 +14,4 @@ smali = { module = "com.android.tools.smali:smali", version.ref = "smali" }
 [plugins]
 binary-compatibility-validator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "binary-compatibility-validator" }
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }

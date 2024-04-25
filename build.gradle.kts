@@ -3,6 +3,7 @@ import org.gradle.kotlin.dsl.support.listFilesOrdered
 plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.binary.compatibility.validator)
+    alias(libs.plugins.shadow)
     `maven-publish`
     signing
 }
@@ -48,12 +49,25 @@ tasks {
         attributes["License"] = "GNU General Public License v3.0"
     }
   }
+  
+  shadowJar {
+      manifest {
+          exclude("META-INF/versions/**")
+      }
+
+      dependencies {
+          include(dependency("app.revanced:revanced.patches.*"))
+          relocate("app.revanced:revanced.patches", "shadow.app.revanced:revanced.patches")
+      }
+      minimize()
+  }
 
   register("buildDexJar") {
         description = "Build and add a DEX to the JAR file"
         group = "build"
 
         dependsOn(build)
+        dependsOn(shadowJar)
 
         doLast {
             val d8 = File(System.getenv("ANDROID_HOME")).resolve("build-tools")
