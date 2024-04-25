@@ -7,10 +7,10 @@ on:
       - main
 jobs:
   build:
-    uses: indranil012/dropped-patches/.github/workflows/release.yml@main
+    uses: indrastorms/dropped-patches/.github/workflows/release.yml@main
     secrets: inherit
 
   update_bundle:
     needs: [build]
-    uses: indranil012/dropped-patches/.github/workflows/update_bundle.yml@main
+    uses: indrastorms/dropped-patches/.github/workflows/update_bundle.yml@main
     secrets: inherit
