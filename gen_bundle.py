@@ -13,7 +13,7 @@ def get_latest_release(repo_url):
         return None, None
 
 def main():
-    patches_repo = "https://api.github.com/repos/Indranil012/Dropped-Patches"
+    patches_repo = "https://api.github.com/repos/indrastorms/Dropped-Patches"
     integration_repo = "https://api.github.com/repos/revanced/revanced-integrations"
 
     patches_version, patches_asset_url = get_latest_release(patches_repo)
@@ -29,9 +29,10 @@ def main():
             "url": integration_asset_url
         }
     }
-    with open('bundle.json', 'w') as file:
+    bundle_name = "dropped-patches-bundle.json"
+    with open(bundle_name, 'w') as file:
         json.dump(info_dict, file, indent=2)
-    print("Latest release information saved to bundle.json")
+    print(f"Latest release information saved to {bundle_name}")
 
 if __name__ == "__main__":
     main()
