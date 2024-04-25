@@ -1,4 +1,4 @@
-package app.revanced.patches.nova.prime.fingerprints
+package dropped.patches.nova.prime.fingerprints
 
 import app.revanced.patcher.fingerprint.MethodFingerprint
 import com.android.tools.smali.dexlib2.Opcode

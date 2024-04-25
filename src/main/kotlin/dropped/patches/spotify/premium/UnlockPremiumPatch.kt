@@ -1,4 +1,4 @@
-package app.revanced.patches.spotify.premium
+package dropped.patches.spotify.premium
 
 import app.revanced.patcher.patch.annotation.CompatiblePackage
 import app.revanced.patcher.patch.annotation.Patch

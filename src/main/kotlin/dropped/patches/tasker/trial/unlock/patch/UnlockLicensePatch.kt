@@ -1,4 +1,4 @@
-package app.revanced.patches.tasker.trial.unlock.patch
+package dropped.patches.tasker.trial.unlock.patch
 
 import app.revanced.util.exception
 import app.revanced.patcher.data.BytecodeContext
@@ -6,7 +6,7 @@ import app.revanced.patcher.extensions.InstructionExtensions.addInstruction
 import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.annotation.Patch
 import app.revanced.patcher.patch.annotation.CompatiblePackage
-import app.revanced.patches.tasker.trial.unlock.fingerprints.CheckLicenseFingerprint
+import dropped.patches.tasker.trial.unlock.fingerprints.CheckLicenseFingerprint
 
 @Patch(
     name = "Unlock trial",

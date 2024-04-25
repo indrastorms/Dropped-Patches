@@ -22,7 +22,7 @@ jobs:
     - name: Run Python script
       run: |
         pip install requests
-        python build_bundle_url.py
+        python gen_bundle.py
       
     - name: Commit and push changes
       run: |

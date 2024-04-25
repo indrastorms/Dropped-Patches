@@ -1,4 +1,4 @@
-package app.revanced.patches.fxfileexplorer.unlockplus.fingerprints
+package dropped.patches.fxfileexplorer.unlockplus.fingerprints
 
 import app.revanced.patcher.extensions.or
 import app.revanced.patcher.fingerprint.MethodFingerprint
