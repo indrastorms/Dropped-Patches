@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.1...v1.4.2) (2024-05-05)
+
+
+### Bug Fixes
+
+* run release ([637cc91](https://github.com/indrastorms/Dropped-Patches/commit/637cc91ed6f1808ef15c94c82bdba9a073e41ddb))
+
 ## [1.4.2-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.1...v1.4.2-dev.1) (2024-05-05)
 
 
