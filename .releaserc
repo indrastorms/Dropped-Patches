@@ -33,7 +33,7 @@
       {
         "assets": [
           {
-            "path": "build/libs/dropped-patches*all*"
+            "path": "build/libs/dropped-patches*"
           }
         ],
         successComment: false
