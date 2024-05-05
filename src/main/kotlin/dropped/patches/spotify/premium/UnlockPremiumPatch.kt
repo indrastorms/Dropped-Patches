@@ -2,7 +2,7 @@ package dropped.patches.spotify.premium
 
 import app.revanced.patcher.patch.annotation.CompatiblePackage
 import app.revanced.patcher.patch.annotation.Patch
-import app.revanced.patches.shared.misc.hex.BaseHexPatch
+import dropped.patches.shared.misc.hex.BaseHexPatch
 
 @Patch(
     name = "Unlock Spotify Premium",
