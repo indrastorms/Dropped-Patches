@@ -1,3 +1,10 @@
+## [1.4.3-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.2...v1.4.3-dev.1) (2024-07-20)
+
+
+### Bug Fixes
+
+* **Spotify:** build jar please ([85c6e96](https://github.com/indrastorms/Dropped-Patches/commit/85c6e9631e322b4ae3717b18566c6531ff469ca3))
+
 ## [1.4.2](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.1...v1.4.2) (2024-05-05)
 
 
