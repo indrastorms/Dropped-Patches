@@ -26,6 +26,11 @@ class UnlockPremiumPatch : BaseHexPatch() {
             "lib/arm64-v8a/liborbit-jni-spotify.so",
         ),
         Replacement(
+            "4f 41 a9 fe 07 42 f8 c0 03 5f d6 fe 0f 1c f8 f8 5f 01 a9 f6 57 02 a9 f4 4f 03 a9 a7 6e 00",
+            "4f 41 a9 fe 07 42 f8 c0 03 5f d6 c0 03 5f d6 f8 5f 01 a9 f6 57 02 a9 f4 4f 03 a9 a7 6e 00",
+            "lib/arm64-v8a/liborbit-jni-spotify.so",
+        ),
+        Replacement(
             "1f 21 14 fe 0f 1c f8",
             "1f 21 14 c0 03 5f d6",
             "lib/arm64-v8a/liborbit-jni-spotify.so",
