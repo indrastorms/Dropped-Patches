@@ -11,19 +11,18 @@ val unlockPrimePatch = bytecodePatch(
     description = "Unlocks Nova Prime and all functions of the app.",
 ) {
     compatibleWith("com.teslacoilsw.launcher")
-  // Any value except 0 unlocks Nova Prime, but 512 is needed for a protection mechanism
-  // otherwise the preferences will be reset if the status on disk changes after a restart.
-  private const val PRIME_STATUS = 512
 
-  val unockPrimePatch by updatePrimeStatusFingerprint()
+    val unlockPrimeMatch by unlockPrimeFingerprint()
 
-  execute {
-      val setStatusIndex = unlockPrimePatch.patternMatch!!.startIndex
+    execute {
+      // Any value except 0 unlocks Nova Prime, but 512 is needed for a protection mechanism
+      // otherwise the preferences will be reset if the status on disk changes after a restart.
+      val PRIME_STATUS = 512
+      val setStatusIndex = unlockPrimeMatch.patternMatch!!.startIndex
 
-      unlockPrimePatch.mutableMethod.apply {
+      unlockPrimeMatch.mutableMethod.apply {
           val statusRegister = getInstruction<OneRegisterInstruction>(setStatusIndex).registerA
           replaceInstruction(setStatusIndex, "const/16 v$statusRegister, $PRIME_STATUS")
       }
-
   }
 }

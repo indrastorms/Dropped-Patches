@@ -1,14 +1,13 @@
 package dropped.patches.fxfileexplorer.unlockplus
 
 import app.revanced.patcher.fingerprint
-import app.revanced.patcher.extensions.or
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
 internal val isPlusUnlockedFingerprint = fingerprint {
     returns("Z")
-    accessFlags(AccessFlags.PRIVATE or AccessFlags.STATIC)
-    strings ("keysig= ","\nlocalsig=","nextapp.fx")
+    accessFlags(AccessFlags.PRIVATE, AccessFlags.STATIC)
+    strings("keysig= ","\nlocalsig=","nextapp.fx")
     opcodes(
         Opcode.INVOKE_VIRTUAL,
         Opcode.MOVE_RESULT_OBJECT,

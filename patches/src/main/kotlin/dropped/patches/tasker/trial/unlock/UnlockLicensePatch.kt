@@ -11,7 +11,7 @@ val unlockLicensePatch = bytecodePatch(
 
     val unlockLicensePatch by checkLicenseFingerprint()
     execute {
-      checkLicenseFingerprint.mutableMethod.addInstruction(0, "return-void")
+      unlockLicensePatch.mutableMethod.addInstruction(0, "return-void")
         // Return the method early, which prompts the user with a non dismissible dialog, when the trial period is over.
     }
   }

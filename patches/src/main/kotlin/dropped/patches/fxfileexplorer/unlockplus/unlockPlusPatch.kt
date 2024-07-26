@@ -11,6 +11,7 @@ val unlockPlusPatch = bytecodePatch(
     compatibleWith("nextapp.fx")
 
     val unlockPlusPatch by isPlusUnlockedFingerprint()
+
     execute { 
       unlockPlusPatch.mutableMethod.addInstructions(
         0,
