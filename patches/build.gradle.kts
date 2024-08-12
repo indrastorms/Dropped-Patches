@@ -18,6 +18,10 @@ dependencies {
 }
 
 tasks {
+    jar {
+        exclude("app/revanced/generator")
+    }
+
     register<JavaExec>("generatePatchesFiles") {
         description = "Generate patches files"
 
