@@ -2,9 +2,3 @@
 revanced-patcher = "20.0.0"
 # revanced-patches = "4.8.0-dev.8"
 smali = "3.0.5"
-guava = "33.0.0-jre"
-gson = "2.11.0"
-
-[libraries]
-guava = { module = "com.google.guava:guava", version.ref = "guava" }
-gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
