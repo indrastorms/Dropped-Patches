@@ -33,7 +33,7 @@
       {
         "assets": [
           {
-            "path": "build/libs/dropped-patches*"
+            "path": "patches/build/libs/*.rvp"
           }
         ],
         successComment: false
