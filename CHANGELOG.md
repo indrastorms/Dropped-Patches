@@ -1,3 +1,17 @@
+## [1.4.3-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.2...v1.4.3-dev.1) (2024-10-26)
+
+
+### Bug Fixes
+
+* force release ([bfddd8d](https://github.com/indrastorms/Dropped-Patches/commit/bfddd8d86b5cd3445e6fa54d946538fb2c80be78))
+
+## [1.4.3-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.2...v1.4.3-dev.1) (2024-10-26)
+
+
+### Bug Fixes
+
+* force release ([bfddd8d](https://github.com/indrastorms/Dropped-Patches/commit/bfddd8d86b5cd3445e6fa54d946538fb2c80be78))
+
 ## [1.4.2](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.1...v1.4.2) (2024-05-05)
 
 
