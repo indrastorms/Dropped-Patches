@@ -1,3 +1,10 @@
+## [1.4.3-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.2...v1.4.3-dev.1) (2024-10-29)
+
+
+### Bug Fixes
+
+* Fix artifacts upload ([9fc3b50](https://github.com/indrastorms/Dropped-Patches/commit/9fc3b50cad684e43093ee71fb33bf9d4dbc299c3))
+
 ## [1.4.3-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.2...v1.4.3-dev.1) (2024-10-26)
 
 
