@@ -1,39 +1,53 @@
-name: update bundle.json
+name: Update Bundle
 
 on:
-  workflow_dispatch:
   workflow_call:
+    inputs:
+      version:
+        description: 'Version to use'
+        required: true
+        default: null
 
 jobs:
-  update_bundle:
+  update-bundle:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-      
-    - name: Run Python script
-      run: |
-        pip install requests
-        python gen_bundle.py
-      
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add dropped-patches-bundle.json
-        git commit -a -m "update bundle.json [skip ci]"
-        git pull
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GIT_TOKEN }}
-        branch: main
+      - name: Update Bundle
+        run: |
+          version=${{ inputs.version }}
+          patches_asset_url="https://github.com/indrastorms/Dropped-Patches/releases/latest/download/dropped-patches-${version}.rvp"
+
+          info_dict=$(cat <<EOF
+          {
+            "patches": {
+              "version": "${version}",
+              "url": "${patches_asset_url}"
+            }
+          }
+          EOF
+          )
+
+          echo "bundle_file=dropped-patches-bundle.json" >> $GITHUB_ENV
+          echo "$info_dict" > "${{ env.bundle_file }}"
+          echo "Latest release information saved to ${{ env.bundle_file }}"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ${{ env.bundle_file }}
+          git commit -m "update ${{ env.bundle_file }} [skip ci]"
+          git pull
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GIT_TOKEN }}
+          branch: main

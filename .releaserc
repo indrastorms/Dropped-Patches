@@ -33,7 +33,7 @@
       {
         "assets": [
           {
-            "path": "build/libs/dropped-patches*"
+            "path": "patches/build/libs/patches-!(*sources*|*javadoc*).rvp?(.asc)"
           }
         ],
         successComment: false
