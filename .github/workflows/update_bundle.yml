@@ -1,6 +1,7 @@
 name: Update Bundle
 
 on:
+  workflow_dispatch:
   workflow_call:
     inputs:
       version:
@@ -22,14 +23,18 @@ jobs:
       - name: Update Bundle
         run: |
           version=${{ inputs.version }}
-          patches_asset_url="https://github.com/indrastorms/Dropped-Patches/releases/latest/download/dropped-patches-${version}.rvp"
+          patches_asset_url="https://github.com/indrastorms/Dropped-Patches/releases/latest/download/patches-${version}.rvp"
+          signatureDownloadUrl="https://github.com/indrastorms/Dropped-Patches/releases/latest/download/patches-${version}.rvp.asc"
+          =
+          description=
 
           info_dict=$(cat <<EOF
           {
-            "patches": {
-              "version": "${version}",
-              "url": "${patches_asset_url}"
-            }
+              "createdAt": "2024-12-12T15:38:39Z",
+              "description": "testing",
+              "downloadUrl": "${patches_asset_url}",
+              "signatureDownloadUrl":"${signatureDownloadUrl}",
+              "version": "${version}"
           }
           EOF
           )
