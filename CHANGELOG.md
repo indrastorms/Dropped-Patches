@@ -1,3 +1,10 @@
+## [1.4.6-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.5...v1.4.6-dev.1) (2024-12-21)
+
+
+### Bug Fixes
+
+* fix ci ([2300def](https://github.com/indrastorms/Dropped-Patches/commit/2300def7fe85ca4a46b3db7a5248eba1165ae06f))
+
 ## [1.4.5](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.4...v1.4.5) (2024-12-21)
 
 
