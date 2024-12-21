@@ -49,7 +49,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPOSITORY_PUSH_ACCESS }}
         run: |
               output=$(npm exec semantic-release)
-              echo "$output"
               version=$(echo "$output" | grep -oP '(?<=Published version: )\d+\.\d+\.\d+')
               echo "::set-output name=version::$version"
 
