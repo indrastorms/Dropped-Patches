@@ -16,8 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Make sure the release step uses its own credentials:
-          # https://github.com/cycjimmy/semantic-release-action#private-packages
           persist-credentials: false
           fetch-depth: 0
 
@@ -46,13 +44,45 @@ jobs:
           fingerprint: ${{ env.GPG_FINGERPRINT }}
 
       - name: Release
-        id: semantic_release 
+        id: semantic_release
         env:
           GITHUB_TOKEN: ${{ secrets.REPOSITORY_PUSH_ACCESS }}
-        run: npm exec semantic-release
-        
-      - name: Call Update Bundle Workflow
-        if: github.ref == 'refs/heads/main'  # Check if the branch is main
-        uses: ./.github/workflows/update-bundle.yml  # Path to the update-bundle workflow
+        run: |
+              output=$(npm exec semantic-release)
+              echo "$output"
+              version=$(echo "$output" | grep -oP '(?<=Published version: )\d+\.\d+\.\d+')
+              echo "::set-output name=version::$version"
+
+      - name: Update Bundle
+        if: startsWith(github.ref, 'refs/heads/main')  # Safer condition
+        run: |
+          version=${{ steps.semantic_release.outputs.version }}
+          patches_asset_url="https://github.com/indrastorms/Dropped-Patches/releases/latest/download/patches-${version}.rvp"
+          signature_download_url="https://github.com/indrastorms/Dropped-Patches/releases/latest/download/patches-${version}.rvp.asc"
+          
+          info_dict=$(cat <<EOF
+          {
+              "created_at": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
+              "description": "Release version ${version}",
+              "download_url": "${patches_asset_url}",
+              "signature_download_url": "${signature_download_url}",
+              "version": "${version}"
+          }
+          EOF
+          )
+
+          echo "bundle_file=dropped-patches-bundle.json" >> $GITHUB_ENV
+          echo "$info_dict" > "${{ env.bundle_file }}"
+          echo "Latest release information saved to ${{ env.bundle_file }}"
+
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ${{ env.bundle_file }}
+          git commit -m "update ${{ env.bundle_file }} [skip ci]"
+
+      - name: Push changes
+        if: startsWith(github.ref, 'refs/heads/main')  # Ensure this matches the main branch condition
+        uses: ad-m/github-push-action@master
         with:
-          version: ${{ steps.semantic_release.outputs.version }}  # Pass the version output
+          github_token: ${{ secrets.GIT_TOKEN }}
+          branch: main
