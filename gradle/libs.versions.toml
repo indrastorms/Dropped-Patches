@@ -1,4 +1,4 @@
 [versions]
-revanced-patcher = "20.0.2"
+revanced-patcher = "21.0.0"
 # revanced-patches = "4.8.0-dev.8"
 smali = "3.0.5"
