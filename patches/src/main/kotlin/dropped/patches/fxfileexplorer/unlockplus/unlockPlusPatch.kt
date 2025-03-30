@@ -10,10 +10,8 @@ val unlockPlusPatch = bytecodePatch(
 ) {
     compatibleWith("nextapp.fx")
 
-    val unlockPlusPatch by isPlusUnlockedFingerprint()
-
     execute {
-        unlockPlusPatch.mutableMethod.addInstructions(
+        isPlusUnlockedFingerprint.method.addInstructions(
             0,
             """
             const/4 v0, 0x1
