@@ -1,3 +1,12 @@
+# [1.5.0-dev.3](https://github.com/indrastorms/Dropped-Patches/compare/v1.5.0-dev.2...v1.5.0-dev.3) (2025-03-30)
+
+
+### Bug Fixes
+
+* fix build ([a2543fb](https://github.com/indrastorms/Dropped-Patches/commit/a2543fb37e9b3095d8224caa8c1fea5b1a007758))
+* fix build ([0c467af](https://github.com/indrastorms/Dropped-Patches/commit/0c467af726d6e3c9aa7c4da3d5d96ac424a87485))
+* fix build ([e75ebec](https://github.com/indrastorms/Dropped-Patches/commit/e75ebecbfc7dbba661a59a1a04de5f48a31a9329))
+
 # [1.5.0-dev.2](https://github.com/indrastorms/Dropped-Patches/compare/v1.5.0-dev.1...v1.5.0-dev.2) (2025-03-30)
 
 
