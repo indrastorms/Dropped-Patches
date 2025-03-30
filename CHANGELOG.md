@@ -1,3 +1,10 @@
+# [1.5.0-dev.2](https://github.com/indrastorms/Dropped-Patches/compare/v1.5.0-dev.1...v1.5.0-dev.2) (2025-03-30)
+
+
+### Bug Fixes
+
+* fix build ([4dc6daf](https://github.com/indrastorms/Dropped-Patches/commit/4dc6daf5945a262ecbb77a5315a59eb24c220b02))
+
 # [1.5.0-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.6-dev.1...v1.5.0-dev.1) (2025-03-30)
 
 
