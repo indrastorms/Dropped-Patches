@@ -1,3 +1,16 @@
+# [1.5.0-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.6-dev.1...v1.5.0-dev.1) (2025-03-30)
+
+
+### Bug Fixes
+
+* bump pqtcher ([cd0b507](https://github.com/indrastorms/Dropped-Patches/commit/cd0b50796103ad4a64dee917d222c5fc4d580c57))
+* fix build ([f47d360](https://github.com/indrastorms/Dropped-Patches/commit/f47d36070895472fb8ba7537750e5bf0ec109999))
+
+
+### Features
+
+* remove spotify ([806a3dc](https://github.com/indrastorms/Dropped-Patches/commit/806a3dc6a435b67adf45e0f2b7e183429960d23e))
+
 ## [1.4.6-dev.1](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.5...v1.4.6-dev.1) (2024-12-21)
 
 
