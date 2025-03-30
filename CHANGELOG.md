@@ -1,3 +1,22 @@
+# [1.5.0](https://github.com/indrastorms/Dropped-Patches/compare/v1.4.5...v1.5.0) (2025-03-30)
+
+
+### Bug Fixes
+
+* bump pqtcher ([cd0b507](https://github.com/indrastorms/Dropped-Patches/commit/cd0b50796103ad4a64dee917d222c5fc4d580c57))
+* fix build ([91f4aec](https://github.com/indrastorms/Dropped-Patches/commit/91f4aeca0737273fcb5feea8246afa80651d7132))
+* fix build ([a2543fb](https://github.com/indrastorms/Dropped-Patches/commit/a2543fb37e9b3095d8224caa8c1fea5b1a007758))
+* fix build ([0c467af](https://github.com/indrastorms/Dropped-Patches/commit/0c467af726d6e3c9aa7c4da3d5d96ac424a87485))
+* fix build ([e75ebec](https://github.com/indrastorms/Dropped-Patches/commit/e75ebecbfc7dbba661a59a1a04de5f48a31a9329))
+* fix build ([4dc6daf](https://github.com/indrastorms/Dropped-Patches/commit/4dc6daf5945a262ecbb77a5315a59eb24c220b02))
+* fix build ([f47d360](https://github.com/indrastorms/Dropped-Patches/commit/f47d36070895472fb8ba7537750e5bf0ec109999))
+* fix ci ([2300def](https://github.com/indrastorms/Dropped-Patches/commit/2300def7fe85ca4a46b3db7a5248eba1165ae06f))
+
+
+### Features
+
+* remove spotify ([806a3dc](https://github.com/indrastorms/Dropped-Patches/commit/806a3dc6a435b67adf45e0f2b7e183429960d23e))
+
 # [1.5.0-dev.4](https://github.com/indrastorms/Dropped-Patches/compare/v1.5.0-dev.3...v1.5.0-dev.4) (2025-03-30)
 
 
