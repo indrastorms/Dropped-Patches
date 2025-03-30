@@ -21,11 +21,10 @@
       "@semantic-release/git",
       {
         "assets": [
-          "README.md",
           "CHANGELOG.md",
           "gradle.properties",
-          "patches.json"
-        ]
+        ],
+        "message": "chore: Release v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     [
@@ -34,7 +33,7 @@
         "assets": [
           {
             "path": "patches/build/libs/patches-!(*sources*|*javadoc*).rvp?(.asc)"
-          }
+          },
         ],
         successComment: false
       }

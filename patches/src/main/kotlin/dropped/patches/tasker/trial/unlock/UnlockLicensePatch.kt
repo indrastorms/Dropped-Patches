@@ -9,9 +9,8 @@ val unlockLicensePatch = bytecodePatch(
 ) {
     compatibleWith("net.dinglisch.android.taskerm")
 
-    val unlockLicensePatch by checkLicenseFingerprint()
     execute {
-        unlockLicensePatch.mutableMethod.addInstruction(0, "return-void")
+        checkLicenseFingerprint.method.addInstruction(0, "return-void")
         // Return the method early, which prompts the user with a non dismissible dialog, when the trial period is over.
     }
 }

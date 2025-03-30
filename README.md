@@ -10,9 +10,6 @@ Nova Launcher
 
 Tasker
 ⦿ Bypass trial
-
-Spotify
-⦿ Unlock premium
 ```
 
 ## Installation
