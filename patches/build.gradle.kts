@@ -51,7 +51,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/revanced/revanced-patches")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+                password = System.getenv("GIT_TOKEN")
             }
         }
     }
