@@ -211,11 +211,7 @@
 
 * **spotify:** add unlck premium ([e8413ab](https://github.com/indrastorms/Dropped-Patches/commit/e8413ab227b29bbd43564b6a96af623de8143392))
 
-<<<<<<< HEAD
-## [1.3.3-dev.1](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.2...v1.3.3-dev.1) (2024-04-03)
-=======
 ## [1.3.3](https://github.com/Indranil012/Dropped-Patches/compare/v1.3.2...v1.3.3) (2024-04-03)
->>>>>>> main
 
 
 ### Bug Fixes
